@@ -1,15 +1,15 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    container: {
+    containerMainApp: {
       backgroundColor: '#1C2120',
       alignItems: 'center',
-      flexDirection: 'collum',
+      flex: 1,
       alignContent: 'flex-start'
     },
   
-    top:{
-      paddingTop: '40%',
+    ContainerLogo:{
+      paddingTop: '25%',
       alignItems: 'center',
     },
   
@@ -18,37 +18,31 @@ const styles = StyleSheet.create({
       height: 100,
     
     },
+
+    tela1:{
+        width: '100%',
+        height: '100%'
+    },
   
-    forms:{
+    containerForms:{
       backgroundColor: '#fff',
       width: '100%',
       height: '100%',
-      top: '10%',
+      top: '5%',
       borderTopLeftRadius: 80,
       borderTopRightRadius: 80,
       alignItems: 'center',
-      alignContent: `flex-start`
     },
   
     txtLogin:{
       color: '#000',
       fontSize: 56,
-      top: '50%'
+      top: '30%'
     },
   
-    inputUser:{
-      backgroundColor: '#8F8E8E',
-      width: '60%',
-      borderRadius: 15,
-      top: '10%',
-      padding: 5,
-      opacity: 0.35
-    },
-  
-    txtUser:{
-      padding: 5,
-      paddingLeft: 15
-    },
+    campPwd:{
+        top: '13%'
+    }
   
   
   
