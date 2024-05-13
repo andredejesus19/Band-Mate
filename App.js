@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Image, ImageBackgroundBase, KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableWithoutFeedback, View, } from 'react-native';
+import { Button, Image, ImageBackgroundBase, KeyboardAvoidingView,TouchableOpacity, StyleSheet, Text, TextInput, TouchableWithoutFeedback, View, } from 'react-native';
 import { useState } from 'react';
 import styles from './style';
 import CampPwd from './defaultConfigs'
@@ -7,6 +7,11 @@ import CampTxt from './defaultConfigs'
 
 
 export default function App() {
+
+  const handlePress = () => {
+    // Lógica a ser executada quando o botão for pressionado
+    console.log('Botão pressionado');
+  };
 
   
   return (
@@ -23,14 +28,50 @@ export default function App() {
 
           <View style={styles.containerForms}>
 
-            <View>
+            <View style={styles.topForms}>
+              
               <Text style={styles.txtLogin}>login</Text>
+              <Text style={styles.txtContinue}>Sign in to continue</Text>
+              
             </View>
 
-            <CampTxt>Band Mate</CampTxt>
+          <View style={styles.mainCampName}> 
 
-            <CampPwd style={styles.campPwd}>******</CampPwd>
+              <Text style={styles.txtName}>NOME</Text>
 
+            <View style={styles.containerCampTxt}>
+
+              <TextInput style={styles.txtCamp} placeholder='Band Mate' />
+            
+            </View>
+          
+          </View>
+          
+          
+            <View style={styles.containerCampPwd}>
+
+            <TextInput style={styles.txtCamp } placeholder='*******' secureTextEntry={true}/>
+            </View>
+
+            <View style={styles.containerButtons}>
+
+            <View style={styles.googleButton}>
+            <TouchableOpacity onPress={handlePress} style={styles.button}>
+            <Image source={require('./assets/login/logoGoogle.png')} style={styles.googleImage} />
+            </TouchableOpacity>
+            
+            </View>
+
+
+              <View style={styles.enterButton}>
+                <View>
+                  <Text style={styles.enterTxt}>Log In</Text>
+                </View>
+              </View>
+            </View>
+
+           
+            
             
 
           </View>
@@ -40,5 +81,5 @@ export default function App() {
     
     </View>
 
-  );
+  )
 }

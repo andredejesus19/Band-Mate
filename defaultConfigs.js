@@ -1,24 +1,25 @@
 import React from "react";
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 
+const CampTxt = ({ children, style }) => {
+    return (
+        <View style={[styles.containerCampTxt, style]}>
+            <TextInput style={styles.txtCampText } placeholder={children} />
+        </View>
+    );
+};
+
 const CampPwd = ({ children, style }) => {
     return (
-        <View style={[styles.containerCamp, style]}>
+        <View style={[styles.containerCampPwd, style]}>
             <TextInput style={styles.txtCamp } placeholder={children} secureTextEntry={true}/>
         </View>
     );
 };
 
-const CampTxt = ({ children, style }) => {
-    return (
-        <View style={[styles.containerCamp, style]}>
-            <TextInput style={styles.txtCamp } placeholder={children} value={Text} />
-        </View>
-    );
-};
 
 const styles = StyleSheet.create({
-    containerCamp: {
+    containerCampPwd: {
       backgroundColor: '#8F8E8E',
       width: '60%',
       borderRadius: 15,
@@ -32,6 +33,8 @@ const styles = StyleSheet.create({
         padding: 5,
       paddingLeft: 15
     }
+
+
 
 });
 
