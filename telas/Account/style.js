@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
       mainCampEmail:{
         width: '100%',
         alignItems: 'center',
-        paddingTop: '10%'
+        paddingTop: '1%'
       },
 
       txtEmail:{
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
       mainCampPwd:{
         width: '100%',
         alignItems: 'center',
-        paddingTop: '2%'
+        paddingTop: '1%'
       },
   
       txtPwd:{
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#000',
         width: '60%',
         borderRadius: 12,
-        top: '8%',
+        top: '7%',
         padding: 10,
         alignItems: 'center'
       },
