@@ -23,7 +23,7 @@ export default function PositionScreen() {
     { name: 'Direção', icon: require('../../assets/New Groups/Icons/director.png') },
     { name: 'Fotografia', icon: require('../../assets/New Groups/Icons/cam.png') },
     { name: 'Projeção', icon: require('../../assets/New Groups/Icons/projector.png') },
-    { name: 'Mainbbnv cs', icon: require('../../assets/New Groups/Icons/more.png') },
+    { name: 'Mais', icon: require('../../assets/New Groups/Icons/more.png') },
     
   ];
 
