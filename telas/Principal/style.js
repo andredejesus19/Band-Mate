@@ -1,35 +1,42 @@
-import { StyleSheet } from 'react-native';
+import { Button, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    containerMainApp: {
-      backgroundColor: '#1C2120',
-      alignItems: 'center',
-      flex: 1,
-      alignContent: 'flex-start'
-    },
+  containerMainApp: {
+    backgroundColor: '#1C2120',
+    width: '100%',
+    flex: 1
+  },
   
-    ContainerLogo:{
-      paddingTop: '25%',
-      top: '5%',
-      alignItems: 'center',
-    },
+  ContainerLogo:{
+    paddingTop: '25%',
+    top: '2%',
+    alignItems: 'center',
+  },
   
-    logoBandMate:{
-      width: 300,
-      height: 100,
-    
-    },
-
-    tela1:{
-        width: '100%',
-        height: '100%'
-    },
+  logoBandMate:{
+    width: 240,
+    height: 80,
+  },
+  
+  
+  tela1:{
+    backgroundColor: '#fff',
+    width: '100%',
+    height: '70%',
+    top: '8%',
+    borderTopLeftRadius: 80,
+    borderTopRightRadius: 80,
+    alignItems: 'center',
+  },
+  
+  ScreenRoll:{
+    width: '100%',
+  },
   
     containerForms:{
-      backgroundColor: '#fff',
       width: '100%',
-      height: '60%',
-      top: '20%',
+      height: '80%',
+      top: '5%',
       borderTopLeftRadius: 80,
       borderTopRightRadius: 80,
       alignItems: 'center',
@@ -51,13 +58,14 @@ const styles = StyleSheet.create({
     mainCampName:{
       width: '100%',
       alignItems: 'center',
-      top: '10%'
+      top: '5%'
 
     },
 
     txtName:{
       color: '#8F8E8E',
-      right: '23%'
+      right: '23%',
+      top: '15%'
     },
   
     containerCampTxt: {
@@ -68,6 +76,18 @@ const styles = StyleSheet.create({
       padding: 5,
       opacity: 0.35,
       alignContent: 'flex-start',
+    },
+
+    mainCampPwd:{
+      width: '100%',
+      alignItems: 'center',
+      paddingTop: '10%'
+    },
+
+    txtPwd:{
+      color: '#8F8E8E',
+      right:'23%',
+      top: '20%'
     },
 
     containerCampPwd: {
@@ -93,16 +113,27 @@ const styles = StyleSheet.create({
 
     containerButtons:{
       flexDirection: 'row',
+      paddingTop: '10%',
+      alignContent: 'center',
+    },
+    
+    ButtonGoogle:{
+      backgroundColor: '#8F8E8E',
+      width: '28%',
+      borderRadius: 15,
+      padding: 8,
+      opacity: 0.35,
+      right: '15%',
+      alignItems: 'center'
     },
 
     googleButton:{
       backgroundColor: '#8F8E8E',
-      width: '28%',
-      borderRadius: 15,
-      top: '30%',
+      width: '230%',
+      borderRadius: 12,
       padding: 8,
       opacity: 0.35,
-      right: '15%',
+      right: '75%',
       alignItems: 'center'
     },
     
@@ -111,20 +142,33 @@ const styles = StyleSheet.create({
       height: 30
     },
 
-    enterButton:{
-      backgroundColor: '#1C2120',
+    ButtonEnter:{
+      backgroundColor: '#000',
       width: '28%',
-      borderRadius: 15,
-      top: '30%',
-      padding: 5,
-      left: '15%',
-      justifyContent: 'center',
-      alignItems: 'center'
+      borderRadius: 12,
+      padding: 8,
+      left: '75%',
+      alignItems: 'center',
+      justifyContent:'center'
     },
 
     enterTxt:{
       color: '#fff',
       fontSize: 18
+    },
+
+    ContainerBaseboard:{
+      padding: '5%',
+      alignItems: 'center',
+    },
+
+    txtLost:{
+      color: '#8F8E8E'
+    },
+
+    TxtCadastre:{
+      padding: 5,
+      color: '#8F8E8E'
     }
 
 
